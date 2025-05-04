@@ -39,7 +39,7 @@ const NewsCard = ({ news }) => {
         <p className="text-sm text-gray-600">
           {details.length > 200 ? (
             <>
-              {details.slice(0, 200)}... <span className="text-red-500 font-semibold cursor-pointer">Read More</span>
+              {details.slice(0, 200)}... <span className="text-red-500 hover:underline font-semibold cursor-pointer">Read More</span>
             </>
           ) : (
             details
