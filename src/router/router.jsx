@@ -8,6 +8,8 @@ export const router = createBrowserRouter([
     {
         path: '/',
         element: <HomeLayout></HomeLayout>,
+        loader: ()=> fetch('/news.json'),
+
         children:[
             {
                 index : true,
@@ -15,7 +17,8 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/category/:id',
-                element: <CategoryNews></CategoryNews>
+                element: <CategoryNews></CategoryNews>,
+                loader: ()=> fetch('/news.json')
             }
         ]
     },
