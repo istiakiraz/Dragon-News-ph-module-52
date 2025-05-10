@@ -9,7 +9,7 @@ const Login = () => {
       <div className=" px-12 py-5 ">
       <h1 className="text-2xl text-[#403F3F] text-center py-8 border-b-1 border-gray-300 font-bold">Login your account</h1>
         <form className="fieldset mt-5">
-        <label className="label text-sm  font-bold ">Email address</label>
+        <label className="label text-sm  font-bold ">Emails address</label>
           <input type="email" className="input" placeholder="Enter your email address" />
           <label className="label text-sm  font-bold">Password</label>
           <input type="password" className="input" placeholder="Password" />
